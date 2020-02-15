@@ -15,9 +15,9 @@ class CreateActivitesTable extends Migration
     {
         Schema::create('activites', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->unsignedBigInteger('goal_id');
-            $table->unsignedBigInteger('competitor_id');
-            $table->text('image');
+            $table->integer('value');
+            $table->time("begin");
+            $table->time("end");
             $table->timestamps();
         });
     }

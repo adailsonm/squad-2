@@ -17,7 +17,6 @@ class CreateSeasonsTable extends Migration
             $table->bigIncrements('id');
             $table->unsignedInteger("period");
             $table->unsignedBigInteger("chanllege_id");
-            $table->
             $table->timestamps();
 
         });
